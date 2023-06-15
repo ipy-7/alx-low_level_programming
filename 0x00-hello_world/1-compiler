@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c main.c -o main.o -Wall -Werror -Wextra -pedantic -std=gnu89
+gcc -c $CFILE -o $(echo "$CFILE" | cut -f 1 -d '.').o -Wall -Werror -Wextra -pedantic -std=gnu89
