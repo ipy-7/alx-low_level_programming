@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\r";
 
-	fwrite(s, sizeof(s), 1, stderr);
+	fwrite(s, 1, sizeof(s), stderr);
 	return (1);
 }
