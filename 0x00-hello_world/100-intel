@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -masm intel -o $(echo $CFILE | cut -f 1 -d '.').s -Wall -Werror -Wextra -pedantic -std=gnu89
+gcc -S $CFILE -masm=intel -o $(echo $CFILE | cut -f 1 -d '.').s -Wall -Werror -Wextra -pedantic -std=gnu89
