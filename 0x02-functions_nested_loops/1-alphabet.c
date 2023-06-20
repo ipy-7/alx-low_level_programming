@@ -10,7 +10,6 @@
  */
 
 /**
- * print_alphabet() - function that prints the alphabet
  *
  * Can this work please????
  */
