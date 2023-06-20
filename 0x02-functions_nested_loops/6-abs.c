@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _islower - wtwwwwwww
+ * _abs - wtwwwwwww
  * @c: the character to check
  *
  * Description: WWWWWWWWWWW
