@@ -2,13 +2,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _putchar - wwwwwwwwww
+ * @c: WWWWWWW
  *
- * Return: Always 0 (Success)
+ * Description: WWWWWWWW
  */
-
-int main(void)
+void _putchar(char c)
 {
-	printf("_putchar\n");
-	return (0);
+	putchar(c);
 }
