@@ -10,9 +10,7 @@
 */
 
 /**
- * print_alphabet - function
- *
- * wadhkajljwdk?
+ * Description: wadhkajljwdk?
 */
 void print_alphabet(void)
 {
