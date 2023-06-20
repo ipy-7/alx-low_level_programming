@@ -4,11 +4,6 @@
  * This is the header file for all functions implemented in this project
  */
 
-void _putchar()
-{
-	printf("_putchar\n");
-}
-
 void print_alphabet(void)
 {
 	char c;
