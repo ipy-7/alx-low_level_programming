@@ -7,11 +7,13 @@
  * print_alphabet() - function that prints the alphabet
  *
  * Return: Always 0 (Success)
- */
+*/
 
 /**
- * Can this work please????
- */
+ * print_alphabet - function
+ *
+ * wadhkajljwdk?
+*/
 void print_alphabet(void)
 {
 	char c;
