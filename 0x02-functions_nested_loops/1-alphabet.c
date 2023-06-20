@@ -6,9 +6,7 @@
  */
 
 /**
- * print_alphabet - ffffffff
- *
- * Description: wadhkajljwdk?
+ * print_alphabet - please work
  */
 void print_alphabet(void)
 {
