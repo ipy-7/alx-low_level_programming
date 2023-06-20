@@ -3,16 +3,14 @@
 
 /**
  *
- * This is a header file for all functions implemented in this project
- *
-*/
+ * Header file for 1-alphabet.c
+ */
 
 /**
- * 
- * print_alphabet - prints alphabet in lowercase
- * 
+ * print_alphabet - function that prints the alphabet
+ *
  * Return: Always 0 (Success)
-*/
+ */
 void print_alphabet(void)
 {
 	char c;
