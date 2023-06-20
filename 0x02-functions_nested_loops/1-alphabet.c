@@ -2,11 +2,9 @@
 #include "main.h"
 
 /**
- * Header file for 1-alphabet.c
- */
-
-/**
  * print_alphabet - please work
+ *
+ * Description: WWWWWWWW
  */
 void print_alphabet(void)
 {
