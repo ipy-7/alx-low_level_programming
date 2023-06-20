@@ -5,13 +5,13 @@
  *
  * This is a header file for all functions implemented in this project
  *
- */
+*/
 
 /**
  * 
  * print_alphabet - prints alphabet in lowercase
  *
- */
+*/
 void print_alphabet(void)
 {
 	char c;
