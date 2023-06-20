@@ -1,15 +1,17 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- *
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * This is the header file for all functions implemented in this project
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char c;
+
+	for (c = 97; c <= 122; c++)
+	{
+		putchar(c);
+	}
+
+	putchar('\n');
 }
