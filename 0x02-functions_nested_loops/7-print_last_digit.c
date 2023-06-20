@@ -11,6 +11,7 @@
  */
 int print_last_digit(int c)
 {
+	c = _abs(c);
 	printf("%d", c % 10);
 	return (c % 10);
 }
