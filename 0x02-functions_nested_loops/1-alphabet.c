@@ -3,15 +3,13 @@
 
 /**
  * Header file for 1-alphabet.c
- *
- * print_alphabet() - function that prints the alphabet
- *
- * Return: Always 0 (Success)
-*/
+ */
 
 /**
+ * print_alphabet - ffffffff
+ *
  * Description: wadhkajljwdk?
-*/
+ */
 void print_alphabet(void)
 {
 	char c;
