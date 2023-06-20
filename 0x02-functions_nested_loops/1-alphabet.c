@@ -2,7 +2,6 @@
 #include "main.h"
 
 /**
- *
  * Header file for 1-alphabet.c
  */
 
