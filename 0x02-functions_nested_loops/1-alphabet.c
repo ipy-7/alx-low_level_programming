@@ -10,7 +10,6 @@
  */
 
 /**
- *
  * Can this work please????
  */
 void print_alphabet(void)
