@@ -10,9 +10,9 @@
  */
 
 /**
- * print_alphabet - function that prints the alphabet
+ * print_alphabet() - function that prints the alphabet
  *
- * Return: Always 0 (Success)
+ * Can this work please????
  */
 void print_alphabet(void)
 {
