@@ -2,7 +2,6 @@
 #include "main.h"
 
 /**
- *
  * fizz_buzz - wwwwwwww
  *
  * Description: WWWWWWW
@@ -19,7 +18,7 @@ void fizz_buzz(void)
 			printf("Buzz");
 		else if (i % 3 == 0)
 			printf("Fizz");
-		else 
+		else
 			printf("%d", i);
 
 		printf(" ");
@@ -27,6 +26,11 @@ void fizz_buzz(void)
 	printf("\n");
 }
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	fizz_buzz();
