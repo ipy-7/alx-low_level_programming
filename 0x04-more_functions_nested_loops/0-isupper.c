@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <ctype.h>
 
 /**
  * _isupper - wtwwwwwww
@@ -8,7 +7,7 @@
  *
  * Description: WWWWWWWWWWW
  *
- * Return: 1 if the character is in lowercase, otherwise 0
+ * Return: 1 if the character is in uppercase, otherwise 0
  */
 int _isupper(int c)
 {
