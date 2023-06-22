@@ -10,7 +10,7 @@ void more_numbers(void)
 {
 	int i, k;
 
-	for (k = 0; k < 9; k++)
+	for (k = 0; k < 10; k++)
 	{
 		int flag;
 
