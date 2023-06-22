@@ -5,5 +5,5 @@
  * File that contains the function prototypes
  */
 
-void _putchar(int c);
+void _putchar(char c);
 int _isupper(int c);

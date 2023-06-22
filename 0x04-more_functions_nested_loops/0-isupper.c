@@ -3,7 +3,7 @@
 
 /**
  * _isupper - wwwwwww
- * @c: wwwwwwww
+ * @c: the character to check
  *
  * Description: WWWWWWW
  *
