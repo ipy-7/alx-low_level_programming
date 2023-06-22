@@ -17,17 +17,17 @@ void more_numbers(void)
 		flag = 0;
 		for (i = 48; i <= 57; i++)
 		{
-			if (!flag)
+			if (flag)
 				_putchar('1');
 			_putchar(i);
 
 			if (i == 57)
 			{
-				i = 48;
+				i = 47;
 				flag = 1;
 			}
 
-			if (flag && i == 4)
+			if (flag && i == 52)
 				break;
 		}
 

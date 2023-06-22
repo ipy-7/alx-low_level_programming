@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-void _putchar(char c)
+void _putchar(int c)
 {
 	putchar(c);
 }
