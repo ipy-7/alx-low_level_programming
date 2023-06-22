@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include "main.h"
+#include <ctype.h>
 
 /**
- * _isupper - wwwwwww
+ * _isupper - wtwwwwwww
  * @c: the character to check
  *
- * Description: WWWWWWW
+ * Description: WWWWWWWWWWW
  *
- * Return: 1 if c is uppercase, otherwise 0
+ * Return: 1 if the character is in lowercase, otherwise 0
  */
 int _isupper(int c)
 {

@@ -2,7 +2,7 @@
 
 /**
  *
- * File that contains the function prototypes
+ * wlajkdl;ajkwl;dk
  */
 
 void _putchar(char c);
