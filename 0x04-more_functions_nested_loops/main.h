@@ -14,4 +14,6 @@ void print_diagonal(int n);
 void print_square(int size);
 void fizz_buzz(void);
 void print_triangle(int size);
+int isPrime(long long n);
+long long largestPrimeFactor(long long n);
 #endif /* !MAIN_H */
