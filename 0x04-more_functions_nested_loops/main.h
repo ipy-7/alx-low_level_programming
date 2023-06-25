@@ -16,4 +16,5 @@ void fizz_buzz(void);
 void print_triangle(int size);
 int isPrime(long n);
 long largestPrimeFactor(long n);
+void print_number(int n);
 #endif /* !MAIN_H */

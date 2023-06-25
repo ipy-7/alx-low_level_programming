@@ -8,7 +8,10 @@
  */
 int main(void)
 {
-	printf("%llu\n", largestPrimeFactor(612852475143));
+	print_number(402);
+	_putchar('\n');
+	print_number(1024);
+	_putchar('\n');
 
 	return (0);
 }
