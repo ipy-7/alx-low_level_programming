@@ -7,9 +7,9 @@
  * Description: WWWWWWW
  * Return: wWWWWWWWWWWW
  */
-int isPrime(long long n)
+int isPrime(long n)
 {
-	long long i;
+	long i;
 
 	if (n <= 1)
 		return (0);
