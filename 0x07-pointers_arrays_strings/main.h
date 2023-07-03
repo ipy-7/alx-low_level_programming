@@ -29,4 +29,5 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 char *_memset(char *s, char b, unsigned int n);
 char *_strchr(char *s, char c);
+char *_strpbrk(char *s, char *accept);
 #endif /* !MAIN_H */
