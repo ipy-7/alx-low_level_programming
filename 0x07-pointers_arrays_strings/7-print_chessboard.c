@@ -7,11 +7,11 @@
  * @a: WWWWWWWWWW
  * Description: WWWWWWWWW
  */
-void print_chessboard(char *a[8])
+void print_chessboard(char (*a)[8])
 {
 	int i, j, rows;
 
-	rows = int(sizeof(*a)) / 8;
+	rows = sizeof(*a) / 8;
 
 	for (i = 0; i < rows; i++)
 	{
