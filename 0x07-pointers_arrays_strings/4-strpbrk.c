@@ -9,7 +9,7 @@
  * Description: WWWWWWWWW
  * Return: a pointer to the memory area s
  */
-char *_strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, len1, len2, j;
 
