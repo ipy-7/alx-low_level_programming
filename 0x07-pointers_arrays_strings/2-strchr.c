@@ -11,11 +11,11 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int i, len;
+	int i, len;
 
 	len = strlen(s);
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		if (s[i] == c)
 		{
@@ -23,5 +23,5 @@ char *_strchr(char *s, char c)
 		}
 	}
 
-	return NULL;
+	return (&s[i]);
 }
