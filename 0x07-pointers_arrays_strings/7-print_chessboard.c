@@ -13,7 +13,7 @@ void print_chessboard(char *a[8])
 
 	rows = int(sizeof(*a)) / 8;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < rows; i++)
 	{
 		for (j = 0; j < 8; j++)
 		{
