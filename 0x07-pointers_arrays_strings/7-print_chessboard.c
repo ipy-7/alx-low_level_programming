@@ -9,14 +9,11 @@
  */
 void print_chessboard(char *a[8])
 {
-	unsigned int i, len1, len2, j;
+	unsigned int i, j;
 
-	len1 = strlen(a);
-	len2 = strlen(*a);
-
-	for (i = 0; i < len1; i++)
+	for (i = 0; i < 8; i++)
 	{
-		for (j = 0; j < len2; j++)
+		for (j = 0; j < 8; j++)
 		{
 			putchar(a[i][j]);
 		}
