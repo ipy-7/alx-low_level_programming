@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 
+int is_prime(int n, int i);
+int is_prime_number(int n);
+
 /**
  * is_prime_number - wWWWWWWWWW
  * @n: WWWWWWWWW
@@ -9,17 +12,17 @@
  */
 int is_prime_number(int n)
 {
-	return (is_prime_number(n, 0));
+	return (is_prime(n, 0));
 }
 
 /**
- * is_prime_number - WWWWWWWWW
+ * is_prime - WWWWWWWWW
  * @n: WWWWWWWWWW
  * @i: WWWWWW
  * Description: WWWWWWWWWW
  * Return: djlakjwdldj
  */
-int is_prime_number(int n, int i)
+int is_prime(int n, int i)
 {
 	if (n <= 0)
 		return (0);
@@ -30,5 +33,5 @@ int is_prime_number(int n, int i)
 	if (n % i == 0)
 		return (0);
 
-	return (is_prime_number(n, i + 1));
+	return (is_prime(n, i + 1));
 }
