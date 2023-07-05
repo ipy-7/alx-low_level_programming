@@ -2,6 +2,17 @@
 #include "main.h"
 
 /**
+ * is_prime_number - wWWWWWWWWW
+ * @n: WWWWWWWWW
+ * Description: WWWWWWWWW
+ * Return: WWWWWWW
+ */
+int is_prime_number(int n)
+{
+	return (is_prime_number(n, 0));
+}
+
+/**
  * is_prime_number - WWWWWWWWW
  * @n: WWWWWWWWWW
  * @i: WWWWWW
@@ -20,15 +31,4 @@ int is_prime_number(int n, int i)
 		return (0);
 
 	return (is_prime_number(n, i + 1));
-}
-
-/**
- * is_prime_number - WWWWWWWWWW
- * @n: WWWWWWWWWW
- * Description: WWWWWWWWWW
- * Return: WWWWWWW
- */
-int is_prime_number(int n)
-{
-	return (is_prime_number(n, 0));
 }
