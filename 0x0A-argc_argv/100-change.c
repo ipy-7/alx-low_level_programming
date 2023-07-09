@@ -3,23 +3,15 @@
 #include <string.h>
 
 /**
- * main - Entry point
+ * bruh - wWWWWWWWWW
+ * @x: WWWWWWWWWWW
  * Description: WWWWWWWW
- * @argc: command line argument count
- * @argv: an array of strings storing command line arguments of size argc
- * Return: Always 0 (Success)
+ * Return: WWWWWWWWWW
  */
-int main(int argc, char *argv[])
+int bruh(int x)
 {
-	int x, ans;
+	int ans;
 
-	if (argc == 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-	x = atoi(argv[1]);
 	ans = 0;
 	while (x > 0)
 	{
@@ -50,7 +42,25 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	printf("%d\n", ans);
+	return (ans);
+}
+
+/**
+ * main - Entry point
+ * Description: WWWWWWWW
+ * @argc: command line argument count
+ * @argv: an array of strings storing command line arguments of size argc
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char *argv[])
+{
+	if (argc == 1)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	printf("%d\n", bruh(atoi(argv[1])));
 
 	return (0);
 }
