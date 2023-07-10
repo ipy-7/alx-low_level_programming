@@ -33,7 +33,7 @@ char **strtow(char *s)
 
 	if (s == NULL || strlen(s) == 0)
 		return (NULL);
-	arr = (char **)malloc(sizeof(char *));
+	arr = (char **)malloc(1);
 	for (i = 0, words = 0; i < (int)strlen(s); i++)
 	{
 		if (s[i] != ' ')
