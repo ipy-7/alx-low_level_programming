@@ -4,6 +4,23 @@
 #include "main.h"
 
 /**
+ * free_arr - WWWWWWWWWWW
+ * @arr: WWWWWWWW
+ * @r: WWWWWWWWW
+ * Description: WWWWWWWWWW
+ */
+void free_arr(int **arr, int r)
+{
+	int i;
+
+	for (i = 0; i < r; i++)
+	{
+		free(arr[i]);
+	}
+	free(arr);
+}
+
+/**
  * strtow - WWWWWWWWWWW
  * @s: WWWWWWWWW
  * Description: WWWWWWWWWW
@@ -25,16 +42,13 @@ char **strtow(char *s)
 			while (j < (int)strlen(s) && s[j] != ' ')
 				j++;
 			len = j - i;
-			if (words != 1)
-				arr = (char **)realloc(arr, (words + 1) * sizeof(char *));
+			arr = (char **)realloc(arr, (words + 1) * sizeof(char *));
 			if (arr == NULL)
 				return (NULL);
 			arr[words] = (char *)malloc(len + 1);
 			if (arr[words] == NULL)
 			{
-				for (j = 0; j < words; j++)
-					free(arr[words]);
-				free(arr);
+				free_arr(arr, words);
 				return (NULL);
 			}
 
