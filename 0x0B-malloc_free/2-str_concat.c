@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * _strdup - WWWWWWWWWWW
+ * str_concat - WWWWWWWWWWW
  * @s1: WWWWWWWWW
  * @s2: WWWWWWWWWW
  * Description: WWWWWWWWWW
@@ -39,12 +39,13 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (i = 0; i < len1; i++)
+	i = 0;
+	for (i; i < len1; i++)
 	{
 		ptr[i] = s1[i];
 	}
 
-	for (i = 0; i < len2; i++)
+	for (i; i < len2; i++)
 	{
 		ptr[i] = s2[i];
 	}
