@@ -9,7 +9,7 @@
  * @r: WWWWWWWWW
  * Description: WWWWWWWWWW
  */
-void free_arr(int **arr, int r)
+void free_arr(char **arr, int r)
 {
 	int i;
 
@@ -29,7 +29,7 @@ void free_arr(int **arr, int r)
 char **strtow(char *s)
 {
 	char **arr;
-	int i, j, len, words, ix;
+	int i, j, len, words, ix, tmp;
 
 	if (s == NULL || strlen(s) == 0)
 		return (NULL);
@@ -42,6 +42,7 @@ char **strtow(char *s)
 			while (j < (int)strlen(s) && s[j] != ' ')
 				j++;
 			len = j - i;
+			tmp = j;
 			arr = (char **)realloc(arr, (words + 1) * sizeof(char *));
 			if (arr == NULL)
 				return (NULL);
@@ -52,11 +53,11 @@ char **strtow(char *s)
 				return (NULL);
 			}
 
-			for (j = i, ix = 0; j < len; j++, ix++)
+			for (j = i, ix = 0; ix < len; j++, ix++)
 				arr[words][ix] = s[j];
 			arr[words][ix] = '\0';
 			words++;
-			i = j;
+			i = tmp;
 		}
 	}
 
