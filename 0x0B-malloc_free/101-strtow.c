@@ -27,7 +27,7 @@ char **strtow(char *s)
 				j++;
 			len = j - i;
 			if (words != 1)
-				arr = realloc(arr, words * sizeof(char *));
+				arr = (char **)realloc(arr, words * sizeof(char *));
 			if (arr == NULL)
 				return (NULL);
 			arr[words] = (char *)malloc(len + 1);
@@ -45,9 +45,9 @@ char **strtow(char *s)
 		}
 	}
 
-	arr = realloc(arr, (words + 1) * sizeof(char *));
+	arr = (char **)realloc(arr, (words + 1) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
 	arr[words] = NULL;
-	return (arr);
+	return (words != 0 ? arr : NULL);
 }
