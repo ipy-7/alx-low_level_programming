@@ -21,13 +21,12 @@ char **strtow(char *s)
 	{
 		if (s[i] != ' ')
 		{
-			words++;
 			j = i;
 			while (j < (int)strlen(s) && s[j] != ' ')
 				j++;
 			len = j - i;
 			if (words != 1)
-				arr = (char **)realloc(arr, words * sizeof(char *));
+				arr = (char **)realloc(arr, (words + 1) * sizeof(char *));
 			if (arr == NULL)
 				return (NULL);
 			arr[words] = (char *)malloc(len + 1);
@@ -42,6 +41,7 @@ char **strtow(char *s)
 			for (j = i, ix = 0; j < len; j++, ix++)
 				arr[words][ix] = s[j];
 			arr[words][ix] = '\0';
+			words++;
 		}
 	}
 
