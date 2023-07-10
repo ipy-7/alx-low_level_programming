@@ -35,7 +35,7 @@ char *alloc_grid(int ac, char **av)
 
 	for (i = 0, idx = 0; i < ac; i++)
 	{
-		for (j = 0; j < strlen(av[i]); j++, idx++)
+		for (j = 0; j < (int)strlen(av[i]); j++, idx++)
 		{
 			s[idx] = av[i][j];
 		}
