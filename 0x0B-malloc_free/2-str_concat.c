@@ -40,12 +40,12 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	i = 0;
-	for (i; i < len1; i++)
+	for (; i < len1; i++)
 	{
 		ptr[i] = s1[i];
 	}
 
-	for (i; i < len2; i++)
+	for (; i < len2; i++)
 	{
 		ptr[i] = s2[i];
 	}
