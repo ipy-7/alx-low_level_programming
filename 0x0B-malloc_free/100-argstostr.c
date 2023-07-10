@@ -10,7 +10,7 @@
  * Description: WWWWWWWWWW
  * Return: A pointer to the array
  */
-char *alloc_grid(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	char *s;
 	int i, total, j, idx;
