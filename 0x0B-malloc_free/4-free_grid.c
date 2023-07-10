@@ -9,7 +9,7 @@
  * @h: WWWWWWWWWW
  * Description: WWWWWWWWWW
  */
-void alloc_grid(int **grid, int h)
+void free_grid(int **grid, int h)
 {
 	int i;
 
