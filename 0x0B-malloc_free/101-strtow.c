@@ -42,6 +42,7 @@ char **strtow(char *s)
 				arr[words][ix] = s[j];
 			arr[words][ix] = '\0';
 			words++;
+			i = j;
 		}
 	}
 
