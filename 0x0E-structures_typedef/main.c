@@ -6,7 +6,7 @@ int main(void)
 	struct dog d;
 	d.name = "WWWWW";
 	d.age = 343.2;
-	d.owner = "WWWWWWWWWW";
+	d.owner = NULL;
 	print_dog(&d);
 
 	return (0);
