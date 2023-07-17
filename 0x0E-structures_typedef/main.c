@@ -3,11 +3,9 @@
 
 int main(void)
 {
-	struct dog d;
-	d.name = "WWWWW";
-	d.age = 343.2;
-	d.owner = NULL;
-	print_dog(&d);
+	dog_t *d;
+
+	d = new_dog("Poppy", 3.5, "Bob");
 
 	return (0);
 }
