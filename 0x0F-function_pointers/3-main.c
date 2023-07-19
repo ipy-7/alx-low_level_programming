@@ -26,11 +26,7 @@ int main(int argc, char **argv)
 	op = NULL;
 	for (i = 0; i < 5; i++)
 	{
-		if (strcmp(argv[2], ops[i]) == 0)
-		{
-			op = ops[i];
-			break;
-		}
+		op = (strcmp(argv[2], ops[i]) == 0 ? ops[i] : op);
 	}
 
 	if (!op)
@@ -46,10 +42,7 @@ int main(int argc, char **argv)
 	}
 
 	func_ptr = get_op_func(argv[2]);
-	if (!func_ptr)
-		printf("EEEEEEEEE\n");
-	else
-		printf("%d\n", func_ptr(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", func_ptr(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
 }
