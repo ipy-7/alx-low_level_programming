@@ -15,7 +15,6 @@ int main(int argc, char **argv)
 {
 	int (*func_ptr)(int, int);
 	char *op;
-	int i;
 
 	op = argv[2];
 	if (argc != 4)
