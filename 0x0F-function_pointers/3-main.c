@@ -14,7 +14,7 @@
 int main(int argc, char **argv)
 {
 	int (*func_ptr)(int, int);
-	char *op, *ops[] = {"+", "-", "/", "*", "%"};
+	char *op, *ops[5] = {"+", "-", "/", "*", "%"};
 	int i;
 
 	if (argc != 4)
