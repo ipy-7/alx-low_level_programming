@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * print_name - WWWWWWWWW
@@ -8,7 +9,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (!name)
+	if (!name || strlen(name) == 0)
 		return;
 
 	(*f)(name);
