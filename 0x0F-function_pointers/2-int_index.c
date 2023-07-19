@@ -7,6 +7,7 @@
  * @size: WWWWWWWWWW
  * @cmp: WWWWWWWW
  * Description: WWWWWWWW
+ * Return: WWWWWWWWWW
  */
 int int_index(int *array, size_t size, void (*cmp)(int))
 {
