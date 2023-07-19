@@ -14,25 +14,14 @@
 int main(int argc, char **argv)
 {
 	int (*func_ptr)(int, int);
-	char *op, *ops[5] = {"+", "-", "/", "*", "%"};
+	char *op;
 	int i;
 
+	op = argv[2];
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
-	}
-
-	op = NULL;
-	for (i = 0; i < 5; i++)
-	{
-		op = (strcmp(argv[2], ops[i]) == 0 ? ops[i] : op);
-	}
-
-	if (!op)
-	{
-		printf("Error\n");
-		exit(99);
 	}
 
 	if ((strcmp(op, "/") == 0 || strcmp(op, "%") == 0) && (atoi(argv[3]) == 0))
@@ -42,6 +31,12 @@ int main(int argc, char **argv)
 	}
 
 	func_ptr = get_op_func(argv[2]);
+	if (!func_ptr)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
 	printf("%d\n", func_ptr(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
