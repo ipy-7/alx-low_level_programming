@@ -8,7 +8,6 @@
  * @argc: WWWWWWW
  * @argv: WWWWWWWW
  *
- * Description: WWWWWWWW
  * Return: WWWWWWWWWW
  */
 int main(int argc, char **argv)

@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include <string.h>
+#include "function_pointers.h"
 
 /**
  * print_name - WWWWWWWWW
  * @name: WWWWWWWW
  * @f: WWWWWWWWWW
- * Description: WWWWWWWW
+ * Return: void
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL || strlen(name) == 0 || (*f) == NULL)
-		return;
-
-	(*f)(name);
+	if (name && f)
+		f(name);
 }
