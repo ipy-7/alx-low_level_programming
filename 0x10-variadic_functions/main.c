@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -7,6 +8,6 @@
  */
 int main(void)
 {
-    print_all("eefffeee", 45.32232, 34.2, 78.2);
+    print_all(NULL, "WWW", NULL);
     return (0);
 }

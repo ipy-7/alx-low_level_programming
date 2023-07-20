@@ -15,14 +15,14 @@ void print_all(const char * const format, ...)
 	int fl, it, cnt;
 
 	it = cnt = 0;
-	while (it < (int)strlen(format))
+	while (format && it < (int)strlen(format))
 	{
 		c = format[it];
 		cnt += (c == 'c' || c == 'i' || c == 'f' || c == 's'), it++;
 	}
 	va_start(ap, format);
 	it = -1;
-	while (++it < (int)strlen(format))
+	while (format && ++it < (int)strlen(format))
 	{
 		fl = 1;
 		cnt--;
