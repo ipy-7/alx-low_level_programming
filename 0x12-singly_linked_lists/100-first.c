@@ -5,7 +5,6 @@
 
 /**
  * first - WWWWWWWW
- * @head: WWWWWWWWWWWWW
  * Return: WWWWWWW
  */
 void first(void)
