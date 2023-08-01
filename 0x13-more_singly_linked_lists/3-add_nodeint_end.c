@@ -8,7 +8,7 @@
  * @n: WWWWWWWW
  * Return: WWWWWWWW
  */
-listint_t *add_nodeint(listint_t **h, const int n)
+listint_t *add_nodeint_end(listint_t **h, const int n)
 {
 	listint_t *newNode, *curr;
 
