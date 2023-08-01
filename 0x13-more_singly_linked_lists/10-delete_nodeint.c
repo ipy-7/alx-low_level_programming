@@ -8,7 +8,7 @@
  * @index: WWWWWWWW
  * Return: WWWWWWWW
  */
-listint_t *delete_nodeint_at_index(listint_t **h, unsigned int index)
+int delete_nodeint_at_index(listint_t **h, unsigned int index)
 {
 	listint_t *curr, *tmp, *prev;
 	unsigned int i;
