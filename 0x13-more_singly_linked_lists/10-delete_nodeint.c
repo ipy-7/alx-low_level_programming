@@ -26,7 +26,7 @@ listint_t *delete_nodeint_at_index(listint_t **h, unsigned int index)
 		curr = curr->next;
 	}
 
-	if (i != idx)
+	if (i != index)
 		return (-1);
 
 	if (!prev)
