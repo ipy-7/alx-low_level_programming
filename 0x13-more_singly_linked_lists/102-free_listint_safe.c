@@ -23,7 +23,7 @@ size_t free_listint_safe(listint_t **h)
 
 	if (!h)
 	{
-		h = (listint_t *)NULL;
+		h = (listint_t **)NULL;
 	}
 	else
 	{
