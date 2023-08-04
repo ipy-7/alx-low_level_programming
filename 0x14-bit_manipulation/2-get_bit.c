@@ -29,5 +29,5 @@ int get_bit(unsigned long int n, unsigned int idx)
 		n >>= 1;
 	}
 
-	return (n & 1);
+	return (i == idx ? (n & 1) : -1);
 }
