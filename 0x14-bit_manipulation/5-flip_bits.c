@@ -8,10 +8,10 @@
  * @m: WWWWWWWW
  * Return: WWWWWWWWW
  */
-int flip_bits(unsigned long int n, unsigned int m)
+unsigned int flip_bits(unsigned long int n, unsigned int m)
 {
 	unsigned long int x = n ^ m;
-	int bits = 0;
+	unsigned int bits = 0;
 
 
 	while (x)
