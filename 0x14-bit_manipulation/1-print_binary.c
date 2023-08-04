@@ -20,10 +20,13 @@ int power(unsigned int x, unsigned int y)
  */
 void print_binary(unsigned long int n)
 {
-	while (n)
+	if (n == 0)
 	{
-		putchar(n & 1);
-		n >>= 1;
+		_putchar(48);
 	}
-	_putchar('\n');
+	else
+	{
+		print_binary(n >> 1);
+		_putchar((n & 1) ? 49 : 48);
+	}
 }
