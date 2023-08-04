@@ -13,7 +13,7 @@ int power(unsigned int x, unsigned int y)
 	return (y == 0 ? 1 : x * power(x, y - 1));
 }
 
-static int x = 0;
+static int x = 1;
 /**
  * print_binary - WWWWWWWW
  * @n: WWWWWWWW
@@ -23,7 +23,7 @@ void print_binary(unsigned long int n)
 {
 	if (n == 0)
 	{
-		if (!x)
+		if (x == 1)
 			_putchar(48);
 	}
 	else
