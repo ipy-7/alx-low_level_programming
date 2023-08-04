@@ -10,13 +10,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned int m)
 {
-	unsigned long int x = (n ^ m), mask = 1;
 	unsigned int bits = 0;
 
-	while (mask <= x)
+	while (n || m)
 	{
-		bits += (mask & x ? 1 : 0);
-		mask <<= 1;
+		bits += ((n & 1) != (m & 1));
+		m >>= 1;
+		n >>= 1;
 	}
 
 	return (bits);
