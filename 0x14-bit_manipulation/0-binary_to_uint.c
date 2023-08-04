@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * pow - WWWWWWWWWW
+ * power - WWWWWWWWWW
  * @x: WWWWWWWW
  * @y: WWWWWWWW
  * Return: WWWWWW
