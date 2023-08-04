@@ -22,7 +22,7 @@ void print_binary(unsigned long int n)
 {
 	while (n)
 	{
-		printf("%d\n", n & 1);
+		printf("%ld\n", n & 1);
 		n >>= 1;
 	}
 }
