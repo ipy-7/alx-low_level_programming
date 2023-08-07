@@ -60,9 +60,10 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: %s file_from file_to\n", av[0]);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
+
 	file_from = av[1];
 	file_to = av[2];
 	fd_from = open(file_from, O_RDONLY);
